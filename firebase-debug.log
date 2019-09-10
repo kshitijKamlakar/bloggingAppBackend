@@ -1,0 +1,47 @@
+[debug] [2019-09-10T11:42:44.614Z] ----------------------------------------------------------------------
+[debug] [2019-09-10T11:42:44.616Z] Command:       /usr/bin/node /usr/bin/firebase init
+[debug] [2019-09-10T11:42:44.616Z] CLI Version:   7.3.1
+[debug] [2019-09-10T11:42:44.616Z] Platform:      linux
+[debug] [2019-09-10T11:42:44.617Z] Node Version:  v12.10.0
+[debug] [2019-09-10T11:42:44.617Z] Time:          Tue Sep 10 2019 17:12:44 GMT+0530 (India Standard Time)
+[debug] [2019-09-10T11:42:44.617Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-09-10T11:42:44.622Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-09-10T11:42:44.623Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/kshitij/PycharmProjects/BlogingAppBackend
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project.
+[debug] [2019-09-10T11:43:14.426Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects  
+
+[debug] [2019-09-10T11:43:15.945Z] <<< HTTP RESPONSE 400
+[debug] [2019-09-10T11:43:15.946Z] <<< HTTP RESPONSE BODY
+[debug] [2019-09-10T11:43:15.948Z] HTTP Error: 400, field [project_id] has issue [project_id contains invalid characters]
+[debug] [2019-09-10T11:43:16.173Z] FirebaseError: HTTP Error: 400, field [project_id] has issue [project_id contains invalid characters]
+    at module.exports (/usr/lib/node_modules/firebase-tools/lib/responseToError.js:38:12)
+    at Request._callback (/usr/lib/node_modules/firebase-tools/lib/api.js:39:35)
+    at Request.self.callback (/usr/lib/node_modules/firebase-tools/node_modules/request/request.js:185:22)
+    at Request.emit (events.js:209:13)
+    at Request.EventEmitter.emit (domain.js:476:20)
+    at Request.<anonymous> (/usr/lib/node_modules/firebase-tools/node_modules/request/request.js:1161:10)
+    at Request.emit (events.js:209:13)
+    at Request.EventEmitter.emit (domain.js:476:20)
+    at IncomingMessage.<anonymous> (/usr/lib/node_modules/firebase-tools/node_modules/request/request.js:1083:12)
+    at Object.onceWrapper (events.js:298:28)
+[error] 
+[error] Error: Failed to create Google Cloud project. See firebase-debug.log for more info.
